@@ -1,0 +1,27 @@
+name = "site_perc_upper"
+version = "1.1.0"
+defaultTargets = ["SitePerc"]
+
+[[lean_exe]]
+name = "siteperc_checker"
+root = "SitePerc.Checker.Exec"
+
+[[lean_lib]]
+name = "SitePerc"
+
+[[lean_lib]]
+name = "SitePercConcreteData"
+srcDir = "../lean-data/g/concrete"
+
+[[lean_lib]]
+name = "SitePercCertificateData"
+srcDir = "../lean-data/g/bytes"
+
+[[lean_lib]]
+name = "SitePercCompactCertificateData"
+srcDir = "../lean-data/g/compact_bytes"
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "56a005855ea17e0b0958f73ec801ae140b0a1679"

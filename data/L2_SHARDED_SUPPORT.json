@@ -1,0 +1,180 @@
+{
+  "schema": 1,
+  "scope": "L2 generic split/merge kernel proofs and completed small native checkpoint regressions only; full6 unfinished",
+  "generic_standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "generic_actual_axioms": {
+    "SitePerc.Checker.boundaryShard_partition": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShardPass_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShard_shape": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShard_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShard_coefficient_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.shardedRegionalLaws_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.shardedRegionalPass_boundary_stages": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "generic_source_sha256": {
+    "SitePerc/Checker/ShardedDefs.lean": "746f0428fcea0d72dcaf2d8416da8cda60186fd0518064b6f5f3c79ecce917dc",
+    "SitePerc/Checker/ShardedSoundness.lean": "704eea817efe62dc334ee4c75677d8f618bdfd1b62a31e9e6647975898d4f4bb"
+  },
+  "small_scope": "m2 complete six-piece exact merge; m4 single large-piece native/import extension; not full m4/m6",
+  "small_regression_gates": {
+    "A_generic_standard_three_separate_from_concrete_native": true,
+    "all_eleven_negatives_rejected": true,
+    "exact_source_pin_data_theorem_artifact_bindings": true,
+    "fresh_process_restart_and_same_runtime_adoption": true,
+    "m2_complete_exact_laws_merge": true,
+    "m2_complete_six_pieces": true,
+    "m2_stored_only_two_flow_native_check": true,
+    "m4_one_large_piece_native_checked": true,
+    "persisted_artifact_bytes_and_mtimes_unchanged": true
+  },
+  "small_concrete_axioms": {
+    "concrete_pieces": [
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked"
+      },
+      {
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound",
+          "SPC7.P59df058f67621412.M4.S2.Mode0.I0.H3d4424fb3ca1a29b.Check.checked._native.native_decide.ax_1_1"
+        ],
+        "native_axiom_count": 1,
+        "theorem": "SPC7.P59df058f67621412.M4.S2.Mode0.I0.H3d4424fb3ca1a29b.Check.checked"
+      }
+    ],
+    "generic_A": {
+      "bytes": 1355,
+      "path": "logs/L2/A/AXIOMS.json",
+      "sha256": "97f55904a1f165f0533cac725e8549963dcda62d3345ccca8e032353a57ca506"
+    },
+    "m2_flow": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SPC7Flow.M2.H8142328f2e1e1f26.flow_checked._native.native_decide.ax_1_1"
+      ],
+      "theorem": "SPC7Flow.M2.H8142328f2e1e1f26.flow_checked"
+    },
+    "m2_merge": {
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked._native.native_decide.ax_1_1",
+        "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked._native.native_decide.ax_1_1",
+        "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked._native.native_decide.ax_1_1",
+        "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked._native.native_decide.ax_1_1",
+        "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked._native.native_decide.ax_1_1",
+        "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked._native.native_decide.ax_1_1"
+      ],
+      "theorem": "SPC7.Merge.H7ad005da50a94ecb8ca7.exact_laws"
+    },
+    "native_is_not_kernel_only": true,
+    "standard_allowed": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "C7_recomputed_during_restart_or_merge": false,
+  "full_m4_complete": false,
+  "full6_verified": false,
+  "full6_final_axiom_audit": null,
+  "receipt_hashes": {
+    "A_AXIOMS.json": "97f55904a1f165f0533cac725e8549963dcda62d3345ccca8e032353a57ca506",
+    "A_SOURCE_HASHES.json": "8cd24c7b2da3373b4ee84c9664428e52e6686d067304fc6240a5e3ff4d381733",
+    "B_AXIOMS.json": "4988a4c8ac97c2ebfc667dff5ec71bbe326de8754f241f8f4adaddaec51cdef4",
+    "B_REGRESSION.json": "0692409ae834d6ca5bb861e0e7adbc008647e2310616b13e25a58181f6f02091",
+    "B_SOURCE_HASHES.json": "cb126cb569ae50c7d426fe51193708b7443192c9a2388b853b84833412cf26a4"
+  }
+}

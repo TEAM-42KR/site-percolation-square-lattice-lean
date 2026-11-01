@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "scope": "Portable computational outcome; infrastructure and budget records omitted.",
+  "verdict": "CLOSED_PARTIAL_NO_GO",
+  "full6_result": "UNKNOWN_NOT_FALSE",
+  "all_profile_acceptance_complete": false,
+  "separate_native_evaluations": 0,
+  "compiled_complete": 8,
+  "compiled_censored": 1,
+  "not_a_whole_upper": true,
+  "not_a_lower_bound": true
+}

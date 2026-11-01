@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-11-01T19:21:48.969023+00:00",
+  "result": "INCOMPLETE_WORKCAP_TIMEOUT",
+  "module": "SitePerc.Final",
+  "source_sha256": "ff22f1e0f8d8b6cb0e31e49b10d9d3c249ae98d4db62e0b8ef73812c3ee21e68",
+  "input_sha256": {
+    "s1_nodes.bin": "0f76669abe031a96daae331e26b940ef132c684e7d45feff7623f1cbc127a79f",
+    "s1_edges.bin": "3a63c78164d5ae41d598a59d3310da658f4bb44eecde21da973c75a5475cedd2",
+    "s2_nodes.bin": "75b808ec2b15737a8b5ccdee72966079328b4a9bada8dea77a6ac8219949a6e7",
+    "s2_edges.bin": "3281cb7c5e16bba814ea0434fb687f8afe1c8ce56fc3d22c50831ce40ce0af24"
+  },
+  "full_native_target_attempts": 1,
+  "terminal_returncode": 1,
+  "terminal_utc": "2026-11-01T19:15:22Z",
+  "stop_exception": "TimeoutError",
+  "stop_reason": "finite phase/work cap: SINGLE_NATIVE_FINAL",
+  "native_predicate_bool": null,
+  "C7_completion_fraction": null,
+  "final_proof_artifact_present": false,
+  "final_two_target_axiom_audit_available": false,
+  "mathematical_refutation_claimed": false,
+  "C7_partial_state_saved": false,
+  "L2_restartable_shard_stage": {
+    "receipt": "data/L2_PROFILE.json",
+    "receipt_sha256": "a6ae831a08714a31d7bd40d8e08b619149ef5d84de45ba714b2da56c2bfed991",
+    "result": "PARTIAL_PROFILE_NO_GO",
+    "full6_success_witness": false,
+    "separate_guard_native_evaluation": false
+  }
+}

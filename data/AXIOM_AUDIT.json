@@ -1,0 +1,339 @@
+{
+  "schema": 1,
+  "recorded_at_utc": "2026-11-01T19:21:48.969023+00:00",
+  "scope": "Previously completed general proofs and small concrete regressions only. No final 6x6 axiom audit exists.",
+  "standard_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "general_declarations_exact_axioms": {
+    "SitePerc.Checker.verified_boundary_stage_one": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.verified_boundary_stage_two": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.verified_boundary_stages": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.prunedParallel_coefficients_correct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.enumerateCubeMemo_refines": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.site_upper_of_boundary_domination": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.substitution_exists": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.directRegionalPass_boundary_stages": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.directRegionalLaws_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePercUpper.Lean.RoadMain": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.boundaryShard_partition": [
+      "propext",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShardPass_sound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShard_shape": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShard_coefficient": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.regionalShard_coefficient_partition": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.shardedRegionalLaws_exact": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.Checker.shardedRegionalPass_boundary_stages": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "compiler_receipt_hashes": [
+    {
+      "kind": "compiled general-theory axiom audit",
+      "receipt_sha256": "d4e4463744b3e299b4ab1204f501139836cfc2f87d436455bd00ff0693b019e1"
+    },
+    {
+      "kind": "compiled general-theory axiom audit",
+      "receipt_sha256": "f0fbb950b2eaee9b453d21bb59083cdcfdc439ce3f274559002ad3f2b4b58680"
+    },
+    {
+      "kind": "compiled general-theory axiom audit",
+      "receipt_sha256": "6703791016ccf827532d252500c3833c1309810d983d6d8abfa1c7ffb8d721e8"
+    },
+    {
+      "kind": "compiler #print axioms output",
+      "receipt_sha256": "acaca6c5b8fb94d5962de1e04fae0e284f6bd54e63d1ab1727b2874cb999b712"
+    },
+    {
+      "kind": "compiler #print axioms output",
+      "receipt_sha256": "5ef892f7f45f4ffddac2f04191c8884b124d6cb46d0a1d20563788d41d950587"
+    }
+  ],
+  "small_native_regressions_exact_axioms": {
+    "SitePerc.Checker.DirectRegression.m2_check_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.m4_check_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.wierman1995_check_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.h1_zero_nodes_false": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.h2_noncanonical_false": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.h2_high_bit_false": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.h2_duplicate_false": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1"
+    ],
+    "SitePerc.Checker.DirectRegression.all_expected_true": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.P59df058f67621412.M4.S2.Mode0.I0.H3d4424fb3ca1a29b.Check.checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M4.S2.Mode0.I0.H3d4424fb3ca1a29b.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7.Merge.H7ad005da50a94ecb8ca7.exact_laws": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked._native.native_decide.ax_1_1",
+      "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked._native.native_decide.ax_1_1",
+      "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked._native.native_decide.ax_1_1",
+      "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked._native.native_decide.ax_1_1",
+      "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked._native.native_decide.ax_1_1",
+      "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked._native.native_decide.ax_1_1"
+    ],
+    "SPC7Flow.M2.H8142328f2e1e1f26.flow_checked": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SPC7Flow.M2.H8142328f2e1e1f26.flow_checked._native.native_decide.ax_1_1"
+    ]
+  },
+  "small_nonstandard_native_axioms": [
+    "SPC7.P59df058f67621412.M2.S2.Mode0.I0.Habf662dd6047a1c8.Check.checked._native.native_decide.ax_1_1",
+    "SPC7.P59df058f67621412.M2.S2.Mode0.I1.H97221bfcff493f8b.Check.checked._native.native_decide.ax_1_1",
+    "SPC7.P59df058f67621412.M2.S2.Mode1.I0.H9c9495c669e95568.Check.checked._native.native_decide.ax_1_1",
+    "SPC7.P59df058f67621412.M2.S2.Mode1.I1.H05993fafbb5020f1.Check.checked._native.native_decide.ax_1_1",
+    "SPC7.P59df058f67621412.M2.S2.Mode2.I0.H726eaa25bd0c2f63.Check.checked._native.native_decide.ax_1_1",
+    "SPC7.P59df058f67621412.M2.S2.Mode2.I1.Ha0a94f3b31449cd8.Check.checked._native.native_decide.ax_1_1",
+    "SPC7.P59df058f67621412.M4.S2.Mode0.I0.H3d4424fb3ca1a29b.Check.checked._native.native_decide.ax_1_1",
+    "SPC7Flow.M2.H8142328f2e1e1f26.flow_checked._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1",
+    "SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1"
+  ],
+  "small_regression_axiom_log_sha256": "f7e01f159460b459900584b5ea8a4123e324fe371cd0ec0992331a84fe4ed9e2",
+  "full_6x6_final_targets": {
+    "SitePercUpper.Lean.SiteUpper": {
+      "compiled": false,
+      "axioms": null
+    },
+    "SitePercUpper.Lean.RoadMainCertified": {
+      "compiled": false,
+      "axioms": null
+    }
+  },
+  "final_native_axiom_claimed": false,
+  "Lean_sources_unchanged_from_attempt_snapshot": true,
+  "Lean_source_hashes": {
+    "SitePerc/Base.lean": "f87444b52a34e28e6794c61ad13381870c78a4351b5908ddcfc225da13b6d954",
+    "SitePerc/Checker/BinomialCubes.lean": "7ea49520737c9493c277dd227a8babc856d4d30f46cef9843d28a00523046cb0",
+    "SitePerc/Checker/CertificateBytes.lean": "4ca45b020bca75f2e5c497b65cf872772a3661957c51736bfa3ab18808428cc4",
+    "SitePerc/Checker/CheckerSoundness.lean": "56f2af8f6e4e363eff0caa3c01dc82de6d1aca42f7feaa66e02817780ffb3058",
+    "SitePerc/Checker/CompactCertificateBytes.lean": "732db7f08374b48c68b8efa180304108916153127cb3d350638986ccf23bdffd",
+    "SitePerc/Checker/CompactCertificateBytesDefs.lean": "d8f39bba6ea3a0d0396a44a71041992f7337e00195d502b9bebf5d167adf500c",
+    "SitePerc/Checker/ConcreteReceipt.lean": "463a43014f67fb9de1ee2e1e185fb96bdf029ca3fdb1a3685304217fd71f50dd",
+    "SitePerc/Checker/Connectivity.lean": "1d15727a312eac21d5602384a253952f90b55c943043a1269ccc03472bff0ac9",
+    "SitePerc/Checker/ConnectivityDefs.lean": "61b53edf3fc3b58856bf7898fb0082eea2d31b2940c5c6ba0d6c5a0298035cdb",
+    "SitePerc/Checker/CubeConfigurations.lean": "10cb8e0e61dac65c2036f932a068ca48f9b6f7d8c7dbc33747320cb5a9ac04f9",
+    "SitePerc/Checker/DirectDefs.lean": "a0138ca3cd000b6b54940e3b148843ca3a50713b7fde8c2b3e02f707b6648787",
+    "SitePerc/Checker/DirectRegression.lean": "ca0be1cf4c09ec1696a5c682f904699d9ac953811dfa6e6bc8deea8764d13859",
+    "SitePerc/Checker/DirectSoundness.lean": "b85101c6fd0dcb0319b0e9b201ca44e668421ff96586b6393e47f449850d0be7",
+    "SitePerc/Checker/Exec.lean": "6887bc55df8efadc71de2e2010f675cbf6e7a6e0f34fe7a8c1dea2d9f0bf0097",
+    "SitePerc/Checker/InjectedFlow.lean": "c627125af7fcd57b8d21bfeec344a1327a6ca4a1a00ed1ebd31992c85e63184f",
+    "SitePerc/Checker/LawDefs.lean": "4c5fbcbe4fced4e5617134bfd1824a2fdb2c4aa48f18ea40cc433a811c941f5e",
+    "SitePerc/Checker/LawProbability.lean": "140985e43134d27a864694c6e34b5172c4d3cbf3f40d3a1b79b5ed24dc9ef76f",
+    "SitePerc/Checker/LawSoundness.lean": "74be05458e3243c1433a3cfe6132d86c38e528882b958459a99baed2c4d82b0a",
+    "SitePerc/Checker/MaskConfigurations.lean": "d5a79dcb3e7bdfde6a3a99168992b879026041a2cd6e9e92fc04cab2caaf614b",
+    "SitePerc/Checker/NativeDefs.lean": "21eb2b6f76e10c8d5a22b137c930192a0254ae1a4e6b7756028bbbb842ea4cd3",
+    "SitePerc/Checker/ParallelAll.lean": "67b7bceb3cb8d526a73a80a8a13b1ab68e05d350afdb941d5bc864134f9e6af5",
+    "SitePerc/Checker/ParallelCertificate.lean": "fcbbd637310ce0dcc03551cba7a5857dd1d57b648db00d7d16610466849e21fc",
+    "SitePerc/Checker/ParallelCertificateDefs.lean": "8c237b043e0a4c570d81a2bcedc6ff0cad38b3ca39d03ba9b7b386a5cdbe2a56",
+    "SitePerc/Checker/ParallelDefs.lean": "27e2e567dda587afc67fb9e0ffc1b258b14ff5bdd8bc641b18844954df0fbc9a",
+    "SitePerc/Checker/PrunedDefs.lean": "1df1d393a30e14d7810ad5746f63c1cd1cf6096a8dc6f91e9766f313400c9c35",
+    "SitePerc/Checker/PrunedSoundness.lean": "54175ff947bf2a90a2cc724b45937054bed7123cfb69eab63bcd911766930813",
+    "SitePerc/Checker/RationalMass.lean": "d9d1bebf1fcedb7bc81474f6796248b2b68d4f2aa23123a32906afa3cb697727",
+    "SitePerc/Checker/RegionalDefs.lean": "8fb5ea24971b8e39279748b6fb5d0ce198a195d5cf5cd97b4d8e40868c15e88b",
+    "SitePerc/Checker/RegionalFlowSoundness.lean": "203f2ddfff20948fda57c41f45fb155443f0ac1fc817da924972deefc2084bfd",
+    "SitePerc/Checker/RegionalGeometry.lean": "d278e95176beae7c9a25064ebb57288e62440b4982c8e517c70b66ce424597b2",
+    "SitePerc/Checker/RegionalOrbitClosure.lean": "dbe081565f226494ceb981636d71e265811aa6d3808fa8b30a7c9b40dd410784",
+    "SitePerc/Checker/RegionalOrbitLaw.lean": "cc5551cf5e11ddbebf0ca087daff4fc2bfe6b3835cad85f15fbc57cfd3891ecf",
+    "SitePerc/Checker/RuntimeProfile.lean": "8775f0fcdb35816544509c79f8b8e8728b1b4146bea6c797bcf55b74b54aa101",
+    "SitePerc/Checker/SparseFlow.lean": "713e29dbf286fcad1fa93c5b2a9f3fbdf01fb51e92d4553d2e394609692d4e40",
+    "SitePerc/Checker/SparseFlowDefs.lean": "8c88fb54ea53b7a3e7f32e89e00a01be3870c8a3924d444508d2a089a89582e8",
+    "SitePerc/Checker/StateCodec.lean": "45009aa94e82d556aaf370cdf498eb2bea9dd99da197624aaba50e9d7db84ba4",
+    "SitePerc/Checker/SubcubePruning.lean": "0c140b1867d8bce342492c18ca227eca1ba193e2e82ef85698879d03d9c639e9",
+    "SitePerc/Checker/UnionFindDefs.lean": "6ea8ea096414e84fad019c92985d45c62bc84c724014ff6ebd80d7ebd8a06441",
+    "SitePerc/Checker/VerifiedRegionalFlow.lean": "27d9d372578e8a01ce63272468bee133085efd043781229e30013b6a093b2dd9",
+    "SitePerc/Conditional.lean": "b2bc06c134dc997292fd4f30530fd305cc8088c25d4f21775c77428753dec9a3",
+    "SitePerc/Final.lean": "ff22f1e0f8d8b6cb0e31e49b10d9d3c249ae98d4db62e0b8ef73812c3ee21e68",
+    "SitePerc/FiniteOrder.lean": "c4cacf11c2962f9acd37179f9c67a82638bab45d6a57e16c7a55a37e4df106f4",
+    "SitePerc/FiniteOrderAudit.lean": "629bf4c8546fd8fcf01854a8fefae35608cde25ee54d3dbe2ac038ad03af4cd4",
+    "SitePerc/FiniteProbability.lean": "9b5080bf2663e82e3ef41d661d1cbe2757eb9c76a8f92185d0e8d566a0daa8e9",
+    "SitePerc/Flow.lean": "48affba45182fc499a81ff360424cef1fad1f2df5970598ae2a3a7a8ca3b37ca",
+    "SitePerc/Foundations.lean": "ccea9d4432fefc5c49aef902fb8d02564d094b6acbfca34e3c105ef9927f3d75",
+    "SitePerc/FractionalHall.lean": "ee9c45ae5d965f7afb674daf5bb2211a12c849dd6deb22d6d7db10b3b9cdcc51",
+    "SitePerc/Geometry.lean": "66e17cd5acd083e98627dc8b5c557cb9cc85342ae61de9e4d3d33d8f476ecfd4",
+    "SitePerc/Occupancy.lean": "2a92697477f03509c18cb5dfd7ec8bfb666a828db6d7961195680e44d305edd4",
+    "SitePerc/Road.lean": "f01ff449eff33f55a3000618b1936db17f838f5eccc09629138f918fe55e5d93",
+    "SitePerc/Substitution.lean": "f7f030bfd6f051738a744efd412c16e34929bae6b48920ada0dc2898b1a3e639",
+    "SitePerc.lean": "c1652c7cad8961111a0e1f303d9e4d0620db5d8399786edfcb408425be5cb960",
+    "SitePerc/Checker/ShardedDefs.lean": "746f0428fcea0d72dcaf2d8416da8cda60186fd0518064b6f5f3c79ecce917dc",
+    "SitePerc/Checker/ShardedSoundness.lean": "704eea817efe62dc334ee4c75677d8f618bdfd1b62a31e9e6647975898d4f4bb"
+  },
+  "L2_sharded_support": {
+    "status": "GENERIC_PROVED_SMALL_NATIVE_VERIFIED_FULL6_UNFINISHED",
+    "generic_axiom_receipt": "logs/L2/A/AXIOMS.json",
+    "generic_axiom_receipt_sha256": "97f55904a1f165f0533cac725e8549963dcda62d3345ccca8e032353a57ca506",
+    "native_axiom_receipt": "logs/L2/B/AXIOMS.json",
+    "native_axiom_receipt_sha256": "4988a4c8ac97c2ebfc667dff5ec71bbe326de8754f241f8f4adaddaec51cdef4",
+    "m2_complete_six_piece_merge": true,
+    "m4_verified_pieces": 1,
+    "full_m4_verified": false,
+    "full6_final_target_axioms_available": false,
+    "runtime_recomputed_on_restart_or_merge": false
+  }
+}
