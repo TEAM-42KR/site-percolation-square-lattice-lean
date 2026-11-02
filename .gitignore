@@ -29,3 +29,6 @@ DELIVERY_RECEIPT.txt
 FINAL_REPORT_KO.txt
 Scaffold.lean
 scaffold_check.*
+
+# Public small native input fixtures are intentionally versioned.
+!data/small-native/**/*.bin

@@ -91,6 +91,41 @@
       "propext",
       "Classical.choice",
       "Quot.sound"
+    ],
+    "SitePerc.flow_implies_domination": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.finite_strassen": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.road_theorem12a": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.road_theorem12b": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.road_corollary13ab": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.road_criticalCompletionTime_upper": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "SitePerc.road_criticalCompletionTime_lower": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
     ]
   },
   "compiler_receipt_hashes": [
@@ -335,5 +370,303 @@
     "full_m4_verified": false,
     "full6_final_target_axioms_available": false,
     "runtime_recomputed_on_restart_or_merge": false
+  },
+  "paper_section8_reproduction": {
+    "repository_release": "v1.1.1",
+    "paper_version_doi": "10.5281/zenodo.23870145",
+    "concept_doi": "10.5281/zenodo.23856107",
+    "declarations": [
+      "SitePerc.substitution_exists",
+      "SitePerc.site_upper_of_boundary_domination",
+      "SitePerc.flow_implies_domination",
+      "SitePerc.finite_strassen",
+      "SitePerc.Checker.directRegionalLaws_exact",
+      "SitePerc.Checker.directRegionalPass_boundary_stages",
+      "SitePerc.Checker.shardedRegionalPass_boundary_stages",
+      "SitePerc.road_theorem12a",
+      "SitePerc.road_theorem12b",
+      "SitePerc.road_corollary13ab",
+      "SitePerc.road_criticalCompletionTime_upper",
+      "SitePerc.road_criticalCompletionTime_lower",
+      "SitePercUpper.Lean.RoadMain"
+    ],
+    "newly_recorded_declarations": [
+      "SitePerc.flow_implies_domination",
+      "SitePerc.finite_strassen",
+      "SitePerc.road_theorem12a",
+      "SitePerc.road_theorem12b",
+      "SitePerc.road_corollary13ab",
+      "SitePerc.road_criticalCompletionTime_upper",
+      "SitePerc.road_criticalCompletionTime_lower"
+    ],
+    "exact_axioms": {
+      "SitePerc.substitution_exists": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.site_upper_of_boundary_domination": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.flow_implies_domination": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.finite_strassen": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.Checker.directRegionalLaws_exact": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.Checker.directRegionalPass_boundary_stages": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.Checker.shardedRegionalPass_boundary_stages": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.road_theorem12a": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.road_theorem12b": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.road_corollary13ab": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.road_criticalCompletionTime_upper": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePerc.road_criticalCompletionTime_lower": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "SitePercUpper.Lean.RoadMain": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ]
+    },
+    "returncode": 0,
+    "raw_log": "data/PAPER13_AXIOMS.log",
+    "raw_log_sha256": "b36ec3cc69f4c70c5e9cee481d85647a7f48b6c973c6d21f2e97e04645fbc3b1",
+    "print_source_sha256": "0bdf558196fc7d8c5f4d12edb970f9b3477034022f0c2b6239b088a0d0f2c40c",
+    "command": [
+      "python3",
+      "scripts/audit_axioms.py",
+      "--module",
+      "SitePerc",
+      "--theorem",
+      "SitePerc.substitution_exists",
+      "--theorem",
+      "SitePerc.site_upper_of_boundary_domination",
+      "--theorem",
+      "SitePerc.flow_implies_domination",
+      "--theorem",
+      "SitePerc.finite_strassen",
+      "--theorem",
+      "SitePerc.Checker.directRegionalLaws_exact",
+      "--theorem",
+      "SitePerc.Checker.directRegionalPass_boundary_stages",
+      "--theorem",
+      "SitePerc.Checker.shardedRegionalPass_boundary_stages",
+      "--theorem",
+      "SitePerc.road_theorem12a",
+      "--theorem",
+      "SitePerc.road_theorem12b",
+      "--theorem",
+      "SitePerc.road_corollary13ab",
+      "--theorem",
+      "SitePerc.road_criticalCompletionTime_upper",
+      "--theorem",
+      "SitePerc.road_criticalCompletionTime_lower",
+      "--theorem",
+      "SitePercUpper.Lean.RoadMain"
+    ],
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "build_input_sha256": {
+      "SitePerc/Base.lean": "f87444b52a34e28e6794c61ad13381870c78a4351b5908ddcfc225da13b6d954",
+      "SitePerc/Checker/BinomialCubes.lean": "7ea49520737c9493c277dd227a8babc856d4d30f46cef9843d28a00523046cb0",
+      "SitePerc/Checker/CertificateBytes.lean": "4ca45b020bca75f2e5c497b65cf872772a3661957c51736bfa3ab18808428cc4",
+      "SitePerc/Checker/CheckerSoundness.lean": "56f2af8f6e4e363eff0caa3c01dc82de6d1aca42f7feaa66e02817780ffb3058",
+      "SitePerc/Checker/CompactCertificateBytes.lean": "732db7f08374b48c68b8efa180304108916153127cb3d350638986ccf23bdffd",
+      "SitePerc/Checker/CompactCertificateBytesDefs.lean": "d8f39bba6ea3a0d0396a44a71041992f7337e00195d502b9bebf5d167adf500c",
+      "SitePerc/Checker/ConcreteReceipt.lean": "463a43014f67fb9de1ee2e1e185fb96bdf029ca3fdb1a3685304217fd71f50dd",
+      "SitePerc/Checker/Connectivity.lean": "1d15727a312eac21d5602384a253952f90b55c943043a1269ccc03472bff0ac9",
+      "SitePerc/Checker/ConnectivityDefs.lean": "61b53edf3fc3b58856bf7898fb0082eea2d31b2940c5c6ba0d6c5a0298035cdb",
+      "SitePerc/Checker/CubeConfigurations.lean": "10cb8e0e61dac65c2036f932a068ca48f9b6f7d8c7dbc33747320cb5a9ac04f9",
+      "SitePerc/Checker/DirectDefs.lean": "a0138ca3cd000b6b54940e3b148843ca3a50713b7fde8c2b3e02f707b6648787",
+      "SitePerc/Checker/DirectRegression.lean": "ca0be1cf4c09ec1696a5c682f904699d9ac953811dfa6e6bc8deea8764d13859",
+      "SitePerc/Checker/DirectSoundness.lean": "b85101c6fd0dcb0319b0e9b201ca44e668421ff96586b6393e47f449850d0be7",
+      "SitePerc/Checker/Exec.lean": "6887bc55df8efadc71de2e2010f675cbf6e7a6e0f34fe7a8c1dea2d9f0bf0097",
+      "SitePerc/Checker/InjectedFlow.lean": "c627125af7fcd57b8d21bfeec344a1327a6ca4a1a00ed1ebd31992c85e63184f",
+      "SitePerc/Checker/LawDefs.lean": "4c5fbcbe4fced4e5617134bfd1824a2fdb2c4aa48f18ea40cc433a811c941f5e",
+      "SitePerc/Checker/LawProbability.lean": "140985e43134d27a864694c6e34b5172c4d3cbf3f40d3a1b79b5ed24dc9ef76f",
+      "SitePerc/Checker/LawSoundness.lean": "74be05458e3243c1433a3cfe6132d86c38e528882b958459a99baed2c4d82b0a",
+      "SitePerc/Checker/MaskConfigurations.lean": "d5a79dcb3e7bdfde6a3a99168992b879026041a2cd6e9e92fc04cab2caaf614b",
+      "SitePerc/Checker/NativeDefs.lean": "21eb2b6f76e10c8d5a22b137c930192a0254ae1a4e6b7756028bbbb842ea4cd3",
+      "SitePerc/Checker/ParallelAll.lean": "67b7bceb3cb8d526a73a80a8a13b1ab68e05d350afdb941d5bc864134f9e6af5",
+      "SitePerc/Checker/ParallelCertificate.lean": "fcbbd637310ce0dcc03551cba7a5857dd1d57b648db00d7d16610466849e21fc",
+      "SitePerc/Checker/ParallelCertificateDefs.lean": "8c237b043e0a4c570d81a2bcedc6ff0cad38b3ca39d03ba9b7b386a5cdbe2a56",
+      "SitePerc/Checker/ParallelDefs.lean": "27e2e567dda587afc67fb9e0ffc1b258b14ff5bdd8bc641b18844954df0fbc9a",
+      "SitePerc/Checker/PrunedDefs.lean": "1df1d393a30e14d7810ad5746f63c1cd1cf6096a8dc6f91e9766f313400c9c35",
+      "SitePerc/Checker/PrunedSoundness.lean": "54175ff947bf2a90a2cc724b45937054bed7123cfb69eab63bcd911766930813",
+      "SitePerc/Checker/RationalMass.lean": "d9d1bebf1fcedb7bc81474f6796248b2b68d4f2aa23123a32906afa3cb697727",
+      "SitePerc/Checker/RegionalDefs.lean": "8fb5ea24971b8e39279748b6fb5d0ce198a195d5cf5cd97b4d8e40868c15e88b",
+      "SitePerc/Checker/RegionalFlowSoundness.lean": "203f2ddfff20948fda57c41f45fb155443f0ac1fc817da924972deefc2084bfd",
+      "SitePerc/Checker/RegionalGeometry.lean": "d278e95176beae7c9a25064ebb57288e62440b4982c8e517c70b66ce424597b2",
+      "SitePerc/Checker/RegionalOrbitClosure.lean": "dbe081565f226494ceb981636d71e265811aa6d3808fa8b30a7c9b40dd410784",
+      "SitePerc/Checker/RegionalOrbitLaw.lean": "cc5551cf5e11ddbebf0ca087daff4fc2bfe6b3835cad85f15fbc57cfd3891ecf",
+      "SitePerc/Checker/RuntimeProfile.lean": "8775f0fcdb35816544509c79f8b8e8728b1b4146bea6c797bcf55b74b54aa101",
+      "SitePerc/Checker/ShardedDefs.lean": "746f0428fcea0d72dcaf2d8416da8cda60186fd0518064b6f5f3c79ecce917dc",
+      "SitePerc/Checker/ShardedSoundness.lean": "704eea817efe62dc334ee4c75677d8f618bdfd1b62a31e9e6647975898d4f4bb",
+      "SitePerc/Checker/SparseFlow.lean": "713e29dbf286fcad1fa93c5b2a9f3fbdf01fb51e92d4553d2e394609692d4e40",
+      "SitePerc/Checker/SparseFlowDefs.lean": "8c88fb54ea53b7a3e7f32e89e00a01be3870c8a3924d444508d2a089a89582e8",
+      "SitePerc/Checker/StateCodec.lean": "45009aa94e82d556aaf370cdf498eb2bea9dd99da197624aaba50e9d7db84ba4",
+      "SitePerc/Checker/SubcubePruning.lean": "0c140b1867d8bce342492c18ca227eca1ba193e2e82ef85698879d03d9c639e9",
+      "SitePerc/Checker/UnionFindDefs.lean": "6ea8ea096414e84fad019c92985d45c62bc84c724014ff6ebd80d7ebd8a06441",
+      "SitePerc/Checker/VerifiedRegionalFlow.lean": "27d9d372578e8a01ce63272468bee133085efd043781229e30013b6a093b2dd9",
+      "SitePerc/Conditional.lean": "b2bc06c134dc997292fd4f30530fd305cc8088c25d4f21775c77428753dec9a3",
+      "SitePerc/Final.lean": "ff22f1e0f8d8b6cb0e31e49b10d9d3c249ae98d4db62e0b8ef73812c3ee21e68",
+      "SitePerc/FiniteOrder.lean": "c4cacf11c2962f9acd37179f9c67a82638bab45d6a57e16c7a55a37e4df106f4",
+      "SitePerc/FiniteOrderAudit.lean": "629bf4c8546fd8fcf01854a8fefae35608cde25ee54d3dbe2ac038ad03af4cd4",
+      "SitePerc/FiniteProbability.lean": "9b5080bf2663e82e3ef41d661d1cbe2757eb9c76a8f92185d0e8d566a0daa8e9",
+      "SitePerc/Flow.lean": "48affba45182fc499a81ff360424cef1fad1f2df5970598ae2a3a7a8ca3b37ca",
+      "SitePerc/Foundations.lean": "ccea9d4432fefc5c49aef902fb8d02564d094b6acbfca34e3c105ef9927f3d75",
+      "SitePerc/FractionalHall.lean": "ee9c45ae5d965f7afb674daf5bb2211a12c849dd6deb22d6d7db10b3b9cdcc51",
+      "SitePerc/Geometry.lean": "66e17cd5acd083e98627dc8b5c557cb9cc85342ae61de9e4d3d33d8f476ecfd4",
+      "SitePerc/Occupancy.lean": "2a92697477f03509c18cb5dfd7ec8bfb666a828db6d7961195680e44d305edd4",
+      "SitePerc/Road.lean": "f01ff449eff33f55a3000618b1936db17f838f5eccc09629138f918fe55e5d93",
+      "SitePerc/Substitution.lean": "f7f030bfd6f051738a744efd412c16e34929bae6b48920ada0dc2898b1a3e639",
+      "SitePerc.lean": "c1652c7cad8961111a0e1f303d9e4d0620db5d8399786edfcb408425be5cb960",
+      "checker/Audit.lean": "4dea11fadae2affe7e97ba25760375ed8dbdf058a1165e2bc53f21ddd8708059",
+      "checker/sharded/Producer.lean": "b19c9277a1534bdf37c6cdb0ee558ebdd62759986d1107d5d10d2c42e4c3cd67",
+      "lake-manifest.json": "0b948bb6ee0ac27c956f763475284fc6e57184a0173e4394305037fe76c1cdbd",
+      "lakefile.toml": "61641529fea8960de13020fa8cb08ae0ee598faa5593dd3a3d2060d11d47b8e4",
+      "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c"
+    },
+    "default_lake_build_returncode": 0,
+    "scope": "Every paper Section8 name individually printed from a fresh default library build. Final/6x6 not executed."
+  },
+  "small_native_reproduction": {
+    "repository_release": "v1.1.1",
+    "recorded_at_utc": "2026-11-02T00:39:13.973696+00:00",
+    "receipt": "data/small-native/REPRODUCTION.json",
+    "receipt_sha256": "c25a4ee87e7eeebc17620c77f1a7a7c9254a17bb9ae34f6b75dd23a7fe6ae951",
+    "raw_log": "data/small-native/NATIVE8.log",
+    "raw_log_sha256": "f7e01f159460b459900584b5ea8a4123e324fe371cd0ec0992331a84fe4ed9e2",
+    "input_manifest": "data/small-native/MANIFEST.sha256",
+    "input_manifest_sha256": "772bc904d1f5f3efda4bc4eeef7d44deceec20204f726178dfec88a9b992c3ed",
+    "input_sha256": {
+      "data/small-native/m2/s1ok_edges.bin": "18ef9ac16a31bba8a79e0bd7952d2890c5b88c91ecacaa48afa6432b322821c3",
+      "data/small-native/m2/s1ok_nodes.bin": "cd4d11403fa31e23a12b2e9e52bc86870bc7371460b7076427d17d641d0cd072",
+      "data/small-native/m2/s2ok_edges.bin": "9596552dbd1b343ae21be31dbc3e2ced86b3427ed9e49aeed8859e3dd4074157",
+      "data/small-native/m2/s2ok_nodes.bin": "24ed81bc0f85f33bc792219e292084f34d6276df689e9cc0f034958fa9d48f66",
+      "data/small-native/m4/s1ok_edges.bin": "ccbda1bb4ec3612c3b640a2e9c8b57c90e2bbc89e8f6d38815f994fb04795b42",
+      "data/small-native/m4/s1ok_nodes.bin": "a1e3068d75b3b2dfbd44016ffc9e86f4424c7994df37e1d8b7360974e20000b3",
+      "data/small-native/m4/s2ok_edges.bin": "fd41300f3c910f07147bd51faf19880634a3745ef097b68b97f70d683e3211dd",
+      "data/small-native/m4/s2ok_nodes.bin": "0ee1d53f8e37891af0a5f8e7bbfbb93d9df5057340445ae1c015a7b5e925fd34",
+      "data/small-native/wierman/s1_edges.bin": "e5ee74bffb119bedb80f7cf3799d286dc9edb7957c27a18db817476c7d6fe7ff",
+      "data/small-native/wierman/s1_nodes.bin": "65f8e1fdec531338e2f11fa4f0ce0d5fcb82948fe509583337a06e4ac6da0f8c",
+      "data/small-native/wierman/s2_edges.bin": "185af935b36eb7c582f9f3c634f026a57451651cf4d6ad061f1d7345ea0ad11b",
+      "data/small-native/wierman/s2_nodes.bin": "9f365f967eca925f4fc95d9bbc8bb50173d5e211f73102be9ede21c2154f9f20"
+    },
+    "generated_Lean_data_source_sha256": "2ec7435d79b18d3c2f5368d80b33deb35af2a55104680d7bb850b33d87cdf0f8",
+    "actual_results": {
+      "m2": true,
+      "m4": true,
+      "wierman1995": true,
+      "H1_omitted_nonbottom": false,
+      "H1_zero_nodes": false,
+      "H2_noncanonical_orbit": false,
+      "H2_ignored_high_bit": false,
+      "H2_duplicate_key": false
+    },
+    "exact_individual_axioms": {
+      "SitePerc.Checker.DirectRegression.m2_check_true": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.m4_check_true": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.wierman1995_check_true": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.h1_zero_nodes_false": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.h2_noncanonical_false": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.h2_high_bit_false": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1"
+      ],
+      "SitePerc.Checker.DirectRegression.h2_duplicate_false": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound",
+        "SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1"
+      ]
+    },
+    "exact_aggregate_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound",
+      "SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1",
+      "SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1"
+    ],
+    "inputs_and_sources_unchanged": true,
+    "native_ax_whitelist_independently_checked": true,
+    "full6_verified": false
   }
 }

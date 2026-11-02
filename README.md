@@ -1,6 +1,6 @@
 # Square-lattice site percolation: partial Lean formalization
 
-**Release v1.1.0 is a PARTIAL formalization, not a completed Lean proof of the
+**Release v1.1.1 is a PARTIAL formalization, not a completed Lean proof of the
 6 x 6 site bound. The concrete boundary dominations D1 and D2 remain explicit
 hypotheses.** The paper checks these comparisons using two independent exact
 programs; that external verification is not a completed Lean computation.
@@ -21,13 +21,13 @@ programs; that external verification is not a completed Lean computation.
 
 **Author:** Sungsoo Na, TEAM42 Inc., Seoul, Republic of Korea.  
 **Acknowledgment:** Assisted by AI.  
-**License:** Apache-2.0; see `LICENSE` and `NOTICE`.
+**License:** code Apache-2.0; small certificate data CC BY 4.0.
+See `LICENSE`, `NOTICE` and `data/small-native/README.md`.
 
-**Paper:** [The site percolation threshold of the square lattice is at most
-0.632, and one random completion per cell creates a giant cluster](https://doi.org/10.5281/zenodo.23856108).
-This DOI identifies the already published paper v1.0.0. The repository's
-v1.1.0 tag identifies this partial-formalization release; it does not change
-that paper record or assert that a new paper version has been published.
+**Paper:** [latest version (concept DOI)](https://doi.org/10.5281/zenodo.23856107),
+[paper v1.1.0](https://doi.org/10.5281/zenodo.23870145).
+The repository tag `v1.1.1` is a packaging and reproducibility patch to the
+partial formalization; it is not a new paper version or completion of D1/D2.
 
 ## What is proved, and what is conditional
 
@@ -75,7 +75,7 @@ Install elan and git, then clone this release and run from its root:
 ```sh
 git clone https://github.com/TEAM-42KR/site-percolation-square-lattice-lean.git
 cd site-percolation-square-lattice-lean
-git checkout v1.1.0
+git checkout v1.1.1
 lake exe cache get
 lake build
 ```
@@ -97,28 +97,42 @@ For example, the exact recorded list for each of
 `SitePerc.site_upper_of_boundary_domination` and
 `SitePercUpper.Lean.RoadMain` is the three-element list above.
 
-The complete per-declaration lists and corresponding source hashes are in
-`data/AXIOM_AUDIT.json`. Reproduce selected prints after `lake build`:
+All thirteen declarations named in paper Section 8 have individual exact
+`#print axioms` results in `data/AXIOM_AUDIT.json`, including the seven missing
+from repository v1.1.0. `data/PAPER13_AXIOMS.log` is the actual fresh-build
+output; its SHA-256, source hashes, toolchain and dependency pin are bound in
+that JSON. Reproduce the full list after `lake build`:
 
 ```sh
-python3 scripts/audit_axioms.py --module SitePerc.Flow --theorem SitePerc.flow_implies_domination --source-file SitePerc/Flow.lean
-python3 scripts/audit_axioms.py --module SitePerc.Conditional --theorem SitePerc.site_upper_of_boundary_domination --theorem SitePerc.substitution_exists --source-file SitePerc/Conditional.lean --source-file SitePerc/Substitution.lean
-python3 scripts/audit_axioms.py --module SitePerc.Road --theorem SitePercUpper.Lean.RoadMain --theorem SitePerc.road_theorem12a --theorem SitePerc.road_theorem12b --theorem SitePerc.road_corollary13ab --source-file SitePerc/Road.lean
-python3 scripts/audit_axioms.py --module SitePerc.Checker.DirectSoundness --theorem SitePerc.Checker.directRegionalLaws_exact --theorem SitePerc.Checker.directRegionalPass_boundary_stages --source-file SitePerc/Checker/DirectSoundness.lean
+python3 scripts/audit_axioms.py --module SitePerc \
+  --theorem SitePerc.substitution_exists \
+  --theorem SitePerc.site_upper_of_boundary_domination \
+  --theorem SitePerc.flow_implies_domination \
+  --theorem SitePerc.finite_strassen \
+  --theorem SitePerc.Checker.directRegionalLaws_exact \
+  --theorem SitePerc.Checker.directRegionalPass_boundary_stages \
+  --theorem SitePerc.Checker.shardedRegionalPass_boundary_stages \
+  --theorem SitePerc.road_theorem12a \
+  --theorem SitePerc.road_theorem12b \
+  --theorem SitePerc.road_corollary13ab \
+  --theorem SitePerc.road_criticalCompletionTime_upper \
+  --theorem SitePerc.road_criticalCompletionTime_lower \
+  --theorem SitePercUpper.Lean.RoadMain
 ```
 
 The script requests actual Lean `#print axioms` output, fails on missing
 targets, and rejects additional axioms unless each is explicitly allowed.
 The direct small regressions have eight disclosed native axioms; the saved
 shard/flow receipts add eight more. Each list records its standard axioms
-and the additional native axioms separately.
-The exact names are recorded, not inferred from status labels. The final
-6 x 6 target audits are **unavailable**, not empty axiom sets.
+and the additional native axioms separately. The final 6 x 6 target audits
+remain **unavailable**, not empty axiom sets.
 
 ## Finite data, small native checks, and shards
 
 `data/MANIFEST.sha256` and `data/FLOW_MANIFEST.sha256` identify the original
-6 x 6 law/flow data, distributed separately with the paper. The Lean direct
+6 x 6 law/flow data, distributed separately with the paper. The published
+`CERT...` headers must be converted in copies to Lean's `R10A...` headers;
+see `data/README.md` for the four-byte conversion and both hash sets. The Lean direct
 checker constructs laws internally; its only external computation inputs
 are the four flow-certificate byte arrays. Matching file hashes or binomial
 totals alone does not prove the boundary law or D1/D2.
@@ -126,14 +140,26 @@ totals alone does not prove the boundary law or D1/D2.
 Small direct-law regressions cover 2 x 2, 4 x 4 and
 `169873/250000 = 0.679492`, plus five malformed-input negatives. Their
 execution theorems require the native axioms recorded in
-`data/AXIOM_AUDIT.json`. Given the separate small flow-input bundles:
+`data/AXIOM_AUDIT.json`. The exact twelve small flow files are now shipped
+under `data/small-native/` with expected sizes, SHA-256 values, format and
+attribution. No certificate download or producer-law file is required:
 
 ```sh
-python3 scripts/generate_direct_regression.py --m2 "$M2_DATA" --m4 "$M4_DATA" --wierman "$WIERMAN_DATA" --output ../direct-regression-output --run
+(cd data/small-native && sha256sum --check MANIFEST.sha256)
+python3 scripts/generate_direct_regression.py \
+  --m2 data/small-native/m2 --m4 data/small-native/m4 \
+  --wierman data/small-native/wierman \
+  --output ../direct-regression-output --run
 ```
 
-The small bundles are not in this repository; a clean default build does
-not rerun them. Do not substitute the 6 x 6 data for these inputs.
+This runs the existing Lean direct-check declarations for the three positive
+cases and generates all five malformed-input negatives deterministically.
+Expect `all_pass: true`: `m2`, `m4`, `wierman1995` are true and
+`H1_omitted_nonbottom`, `H1_zero_nodes`, `H2_noncanonical_orbit`,
+`H2_ignored_high_bit`, `H2_duplicate_key` are false. Outputs, generated Lean
+modules and native receipts stay outside this source repository.
+`data/small-native/README.md` documents hashes and provenance. These small
+checks neither close D1/D2 at 6 x 6 nor rerun the separate shard pipeline.
 
 `SitePerc.Checker.ShardedDefs` and `ShardedSoundness` implement a disjoint,
 clipped boundary partition, coefficientwise refinement and exact saved-map

@@ -1,0 +1,51 @@
+'SitePerc.Checker.DirectRegression.m2_check_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.m4_check_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.wierman1995_check_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.h1_zero_nodes_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.h2_noncanonical_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.h2_high_bit_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.h2_duplicate_false' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1]
+'SitePerc.Checker.DirectRegression.all_expected_true' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound,
+ SitePerc.Checker.DirectRegression.h1_omitted_nonbottom_false._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.h1_zero_nodes_false._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.h2_duplicate_false._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.h2_high_bit_false._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.h2_noncanonical_false._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.m2_check_true._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.m4_check_true._native.native_decide.ax_1_1,
+ SitePerc.Checker.DirectRegression.wierman1995_check_true._native.native_decide.ax_1_1]
+"DIRECT_RESULT m2 true"
+"DIRECT_RESULT m4 true"
+"DIRECT_RESULT wierman1995 true"
+"DIRECT_RESULT H1_omitted_nonbottom false"
+"DIRECT_RESULT H1_zero_nodes false"
+"DIRECT_RESULT H2_noncanonical_orbit false"
+"DIRECT_RESULT H2_ignored_high_bit false"
+"DIRECT_RESULT H2_duplicate_key false"

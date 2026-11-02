@@ -10,15 +10,57 @@ The large data files are distributed separately from the proof-source repository
 
 The stage parameters are `q0 = 5001/10000`, `p1 = 117/200` and `p2 = 79/125`. The comparison direction is reference-boundary law dominated by target-boundary law. Boundary states distinguish a closed singleton from an open singleton and record actual open connectivity, not planar crossing pictures.
 
-## Getting and checking the data
+## Getting and checking the 6 x 6 data
 
-The original 6 x 6 law/flow data accompany the paper at https://doi.org/10.5281/zenodo.23856108. Extract the named files into a directory outside the source repository. This does not supply the separate small-regression bundles. Copy this manifest beside the original 6 x 6 files and run:
+The paper data are public at the [concept DOI (latest)](https://doi.org/10.5281/zenodo.23856107)
+and the [v1.1.0 record](https://doi.org/10.5281/zenodo.23870145). Follow that
+record's README to reassemble and extract the certificate archive and
+reproduction ZIP. Check the public `SHA256SUMS` **before any conversion**.
+The twelve small-native inputs are included separately in this repository;
+see `small-native/README.md` and the root README.
+
+### Public `CERT` headers versus Lean `R10A` headers
+
+The public four flow files start with `CERTNODE` or `CERTEDGE`. The Lean
+parser expects `R10ANODE` or `R10AEDGE`. Only the first four bytes differ:
+replace `CERT` by `R10A`; every byte from offset 4 onward is identical.
+Do this only to separate copies, never the downloaded public files.
+The procedure and paired hashes below match the Zenodo v1.1.0 README.
+
+After unpacking the public reproduction ZIP and certificate archive, run
+from their common root. Set `REPO_DIR` to the absolute path of this clone:
 
 ```sh
-sha256sum --check MANIFEST.sha256
+sha256sum --check SHA256SUMS
+mkdir lean-input
+cp certificates/s1_nodes.bin certificates/s1_edges.bin certificates/s2_nodes.bin certificates/s2_edges.bin lean-input/
+for f in lean-input/s1_nodes.bin lean-input/s1_edges.bin lean-input/s2_nodes.bin lean-input/s2_edges.bin; do printf 'R10A' | dd of="$f" bs=1 count=4 conv=notrunc status=none; done
+(cd lean-input && sha256sum --check "$REPO_DIR/data/FLOW_MANIFEST.sha256")
 ```
 
-A hash match identifies bytes; it is not a proof of C7. The verified Lean checker must establish statewise agreement with the actual Bernoulli boundary law, as well as valid states, automorphisms, all source-positive support, correct exact rounding, increasing edges, per-node flow conservation and sink capacity bounds.
+Each original public file must first match the `CERT...` hash and each
+converted copy must then match the `R10A...` hash. The four conversions
+leave the lengths and bytes at offsets 4 onward unchanged.
+
+| File | SHA-256 in this record (`CERT...`) | SHA-256 after the conversion (`R10A...`) |
+|---|---|---|
+| `certificates/s1_nodes.bin` | `8270fb6b60fa492b0e30799cfbc609cd172c2e053e7811f0e7b3f68fa590ea1e` | `0f76669abe031a96daae331e26b940ef132c684e7d45feff7623f1cbc127a79f` |
+| `certificates/s1_edges.bin` | `93d1cf2cd14932a863d2210df0c57fded09da7ea80e49ca153f7858480c68adf` | `3a63c78164d5ae41d598a59d3310da658f4bb44eecde21da973c75a5475cedd2` |
+| `certificates/s2_nodes.bin` | `3491a3f16b3234dbec52a574e6f09942e04a75b0a6516bb9dffb1afe04e7296e` | `75b808ec2b15737a8b5ccdee72966079328b4a9bada8dea77a6ac8219949a6e7` |
+| `certificates/s2_edges.bin` | `2358aa13a7a52213b971913f5ffb27f85e188c45f1f6dde55a4deff3f5f118b1` | `3281cb7c5e16bba814ea0434fb687f8afe1c8ce56fc3d22c50831ce40ce0af24` |
+
+
+`MANIFEST.sha256` lists these same four converted hashes; its other seven
+entries agree with the public `SHA256SUMS`. To verify all eleven Lean-format
+inputs, copy the other seven unchanged files from `certificates/` alongside
+the converted four, then run `sha256sum --check "$REPO_DIR/data/MANIFEST.sha256"`
+from that directory. Do not apply the converted manifest directly to the
+unmodified public `CERT...` files.
+
+A hash match identifies bytes; it is not a proof of C7. The verified Lean
+checker must establish statewise agreement with the actual Bernoulli
+boundary law, valid states, automorphisms, source-positive support, exact
+rounding, increasing edges, flow conservation and sink capacity bounds.
 
 ## Exact four-flow input subset
 

@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "scope": "Small exact native direct-check inputs only; not6x6",
+  "license": "CC-BY-4.0",
+  "author": "Sungsoo Na",
+  "affiliation": "TEAM42 Inc.",
+  "total_bytes": 2845792,
+  "files": [
+    {
+      "path": "m2/s1ok_edges.bin",
+      "bytes": 144,
+      "sha256": "18ef9ac16a31bba8a79e0bd7952d2890c5b88c91ecacaa48afa6432b322821c3",
+      "magic": "R10AEDGE",
+      "stage": 1,
+      "kind": "edges"
+    },
+    {
+      "path": "m2/s1ok_nodes.bin",
+      "bytes": 480,
+      "sha256": "cd4d11403fa31e23a12b2e9e52bc86870bc7371460b7076427d17d641d0cd072",
+      "magic": "R10ANODE",
+      "stage": 1,
+      "kind": "nodes"
+    },
+    {
+      "path": "m2/s2ok_edges.bin",
+      "bytes": 144,
+      "sha256": "9596552dbd1b343ae21be31dbc3e2ced86b3427ed9e49aeed8859e3dd4074157",
+      "magic": "R10AEDGE",
+      "stage": 2,
+      "kind": "edges"
+    },
+    {
+      "path": "m2/s2ok_nodes.bin",
+      "bytes": 480,
+      "sha256": "24ed81bc0f85f33bc792219e292084f34d6276df689e9cc0f034958fa9d48f66",
+      "magic": "R10ANODE",
+      "stage": 2,
+      "kind": "nodes"
+    },
+    {
+      "path": "m4/s1ok_edges.bin",
+      "bytes": 447600,
+      "sha256": "ccbda1bb4ec3612c3b640a2e9c8b57c90e2bbc89e8f6d38815f994fb04795b42",
+      "magic": "R10AEDGE",
+      "stage": 1,
+      "kind": "edges"
+    },
+    {
+      "path": "m4/s1ok_nodes.bin",
+      "bytes": 1009824,
+      "sha256": "a1e3068d75b3b2dfbd44016ffc9e86f4424c7994df37e1d8b7360974e20000b3",
+      "magic": "R10ANODE",
+      "stage": 1,
+      "kind": "nodes"
+    },
+    {
+      "path": "m4/s2ok_edges.bin",
+      "bytes": 376048,
+      "sha256": "fd41300f3c910f07147bd51faf19880634a3745ef097b68b97f70d683e3211dd",
+      "magic": "R10AEDGE",
+      "stage": 2,
+      "kind": "edges"
+    },
+    {
+      "path": "m4/s2ok_nodes.bin",
+      "bytes": 1009824,
+      "sha256": "0ee1d53f8e37891af0a5f8e7bbfbb93d9df5057340445ae1c015a7b5e925fd34",
+      "magic": "R10ANODE",
+      "stage": 2,
+      "kind": "nodes"
+    },
+    {
+      "path": "wierman/s1_edges.bin",
+      "bytes": 144,
+      "sha256": "e5ee74bffb119bedb80f7cf3799d286dc9edb7957c27a18db817476c7d6fe7ff",
+      "magic": "R10AEDGE",
+      "stage": 1,
+      "kind": "edges"
+    },
+    {
+      "path": "wierman/s1_nodes.bin",
+      "bytes": 480,
+      "sha256": "65f8e1fdec531338e2f11fa4f0ce0d5fcb82948fe509583337a06e4ac6da0f8c",
+      "magic": "R10ANODE",
+      "stage": 1,
+      "kind": "nodes"
+    },
+    {
+      "path": "wierman/s2_edges.bin",
+      "bytes": 144,
+      "sha256": "185af935b36eb7c582f9f3c634f026a57451651cf4d6ad061f1d7345ea0ad11b",
+      "magic": "R10AEDGE",
+      "stage": 2,
+      "kind": "edges"
+    },
+    {
+      "path": "wierman/s2_nodes.bin",
+      "bytes": 480,
+      "sha256": "9f365f967eca925f4fc95d9bbc8bb50173d5e211f73102be9ede21c2154f9f20",
+      "magic": "R10ANODE",
+      "stage": 2,
+      "kind": "nodes"
+    }
+  ],
+  "producer_reference": {
+    "paper_version_doi": "10.5281/zenodo.23870145",
+    "reproduction_archive": "site-percolation-square-lattice-1.1.0-reproduction.zip",
+    "source_paths": [
+      "src/make_region.py",
+      "src/enum_pattern.cpp",
+      "src/masses.py",
+      "src/certflow.cpp",
+      "src/driver.py"
+    ],
+    "provenance": "Project-generated exact small integer-flow witnesses from the successful native regression; shipped bytes are canonical for byte reproduction.",
+    "generated_Lean_data_source_sha256": "2ec7435d79b18d3c2f5368d80b33deb35af2a55104680d7bb850b33d87cdf0f8"
+  }
+}
